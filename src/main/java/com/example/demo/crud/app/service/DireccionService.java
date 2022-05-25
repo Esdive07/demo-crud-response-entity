@@ -27,4 +27,22 @@ public class DireccionService {
 		return this.direccionRepository.findAll();
 	}
 
+//actualizar
+	public DireccionEntity updateDireccion(DireccionEntity direccionEntity, Integer id) {
+		return this.direccionRepository.save(direccionEntity);
+
+	}
+
+//delete
+	public void deleteDireccion(Integer id) {
+		this.direccionRepository.deleteById(id);
+		;
+	}
+
+//consultar por id
+	public DireccionEntity getUserId(Integer id) {
+		return this.direccionRepository.findById(id).get();
+
+	}
+
 }

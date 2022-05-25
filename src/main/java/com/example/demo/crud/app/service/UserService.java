@@ -39,6 +39,6 @@ public class UserService {
 
 //Consultar por id
 	public UserEntity getUserById(Integer id) {
-		return this.userRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("id no existe"));
+		return this.userRepository.findById(id).get();
 	}
 }
