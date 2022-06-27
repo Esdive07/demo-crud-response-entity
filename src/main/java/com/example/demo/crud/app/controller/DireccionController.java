@@ -36,8 +36,8 @@ public class DireccionController {
 
 //consultar
 	@GetMapping
-	public ResponseEntity<List<DireccionEntity>> getUserAll() {
-		return ResponseEntity.ok(this.direccionService.getUserAll());
+	public ResponseEntity<List<DireccionEntity>> getDireccionAll() {
+		return ResponseEntity.ok(this.direccionService.getDireccionAll());
 
 	}
 
@@ -59,7 +59,7 @@ public class DireccionController {
 
 //consultar uno
 	@GetMapping("/{id}")
-	public ResponseEntity<DireccionEntity> getUserId(@PathVariable Integer id) {
+	public ResponseEntity<DireccionEntity> getDireccionId(@PathVariable Integer id) {
 		return ResponseEntity.ok(this.direccionService.getUserId(id));
 	}
 }

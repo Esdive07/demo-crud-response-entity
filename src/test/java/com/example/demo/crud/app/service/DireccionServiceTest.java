@@ -43,7 +43,7 @@ public class DireccionServiceTest {
 		listEntity.add(direccionEntity);
 
 		when(this.direccionRepository.findAll()).thenReturn(listEntity);
-		List<DireccionEntity> response = this.direccionService.getUserAll();
+		List<DireccionEntity> response = this.direccionService.getDireccionAll();
 		assertNotNull(response);
 	}
 
