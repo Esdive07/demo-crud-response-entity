@@ -26,11 +26,11 @@ public class DireccionEntity {
 		this.id = id;
 	}
 
-	public String getcalle() {
+	public String getCalle() {
 		return calle;
 	}
 
-	public void setNombre(String calle) {
+	public void setCalle(String calle) {
 		this.calle = calle;
 	}
 
